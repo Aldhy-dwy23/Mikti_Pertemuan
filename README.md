@@ -1,3 +1,3 @@
-# Tugas Pertemuan 8
+# Tugas Pertemuan Mikti
 
-Tugasnya di file `tugas_per8.dart` kak
+Tugas
