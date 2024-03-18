@@ -1,39 +1,38 @@
 import 'dart:io';
 
 void main() {
-
   stdout.write('Masukkan suhu yang akan diubah ke C: ');
-  double suhu = double.parse(stdin.readLineSync()!);
+  num suhu = num.parse(stdin.readLineSync()!);
   
   stdout.write('Masukkan satuan suhu yang anda inginkan (F untuk Fahrenheit, R untuk Reamur, K untuk Kelvin): ');
   String satuan = stdin.readLineSync()!;
   
   switch (satuan.toUpperCase()) {
     case 'F':
-      double celsius = fahrenheitKeCelsius(suhu);
+      num celsius = fahrenheitKeCelsius(suhu);
       print('$suhu derajat Fahrenheit = $celsius Celsius');
-
+      break;
     case 'R':
-      double celsius = reamurKeCelsius(suhu);
+      num celsius = reamurKeCelsius(suhu);
       print('$suhu derajat Reamur = $celsius Celsius');
-
+      break;
     case 'K':
-      double celsius = kelvinKeCelsius(suhu);
+      num celsius = kelvinKeCelsius(suhu);
       print('$suhu derajat Kelvin = $celsius Celsius');
-
+      break;
     default:
       print('Satuan suhu tidak valid');
   }
 }
 
-double fahrenheitKeCelsius(double fahrenheit) {
+num fahrenheitKeCelsius(num fahrenheit) {
   return (fahrenheit - 32) * 5 / 9;
 }
 
-double reamurKeCelsius(double reamur) {
+num reamurKeCelsius(num reamur) {
   return reamur * 5 / 4;
 }
 
-double kelvinKeCelsius(double kelvin) {
+num kelvinKeCelsius(num kelvin) {
   return kelvin - 273.15;
 }
