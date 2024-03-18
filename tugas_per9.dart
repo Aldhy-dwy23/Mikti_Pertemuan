@@ -11,15 +11,15 @@ void main() {
     case 'F':
       num celsius = fahrenheitKeCelsius(suhu);
       print('$suhu derajat Fahrenheit = $celsius Celsius');
-      break;
+
     case 'R':
       num celsius = reamurKeCelsius(suhu);
       print('$suhu derajat Reamur = $celsius Celsius');
-      break;
+
     case 'K':
       num celsius = kelvinKeCelsius(suhu);
       print('$suhu derajat Kelvin = $celsius Celsius');
-      break;
+
     default:
       print('Satuan suhu tidak valid');
   }
