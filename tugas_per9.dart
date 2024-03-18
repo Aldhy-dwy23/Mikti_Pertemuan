@@ -11,15 +11,15 @@ void main() {
   switch (satuan.toUpperCase()) {
     case 'F':
       double celsius = fahrenheitKeCelsius(suhu);
-      print('$suhu Fahrenheit = $celsius Celsius');
+      print('$suhu derajat Fahrenheit = $celsius Celsius');
 
     case 'R':
       double celsius = reamurKeCelsius(suhu);
-      print('$suhu Reamur = $celsius Celsius');
+      print('$suhu derajat Reamur = $celsius Celsius');
 
     case 'K':
       double celsius = kelvinKeCelsius(suhu);
-      print('$suhu Kelvin = $celsius Celsius');
+      print('$suhu derajat Kelvin = $celsius Celsius');
 
     default:
       print('Satuan suhu tidak valid');
